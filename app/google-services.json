@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533008438380",
+    "project_id": "my-shorts-11e7f",
+    "storage_bucket": "my-shorts-11e7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533008438380:android:77abb0e62c98d0ba0bb449",
+        "android_client_info": {
+          "package_name": "com.example.myshorts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1UT-YlzRTSfFRemw6GuQQ1WX892Ev8pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

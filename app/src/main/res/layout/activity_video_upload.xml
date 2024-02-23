@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoUploadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/post_view">
+
+        <EditText
+            android:id="@+id/post_caption_input"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@id/post_thumbnail_view"
+            android:gravity="top"
+            android:hint="@string/write_your_caption_here"
+            android:padding="10dp"
+            tools:ignore="Autofill,TextContrastCheck,TextFields"/>
+
+        <ImageView
+            android:id="@+id/post_thumbnail_view"
+            android:layout_width="90dp"
+            android:layout_height="160dp"
+            android:layout_alignParentEnd="true"
+            tools:background="@color/black"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/todo3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_weight="1"
+                android:id="@+id/cancel_post_btn"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:id="@+id/progress_bar"
+                android:visibility="gone"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/post"
+                android:layout_weight="1"
+                android:id="@+id/submit_post_btn"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/upload_view">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_add"
+            android:layout_centerInParent="true"
+            android:id="@+id/add_icon"
+            app:tint="@color/black"
+            android:contentDescription="@string/todo2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_icon"
+            android:gravity="center"
+            android:text="@string/click_to_upload_video"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
