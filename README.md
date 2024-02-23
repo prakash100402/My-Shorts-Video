@@ -9,7 +9,7 @@ A simple Android app using Kotlin that mimics the core features of YouTube Short
 
 ## Step To Install
 
-Step 1:- Install the App which is located in the Folder \MyShorts\app\release or you can run on Android Studio emulator.
+Step 1:- Install the App which is located in the Folder Install App in github, In Internshala- \MyShorts\app\release or you can run on Android Studio emulator.
 
 Step 2:- If you are New User You have to Create new Account
 
